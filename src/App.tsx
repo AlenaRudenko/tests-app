@@ -5,8 +5,8 @@ import "./style.css";
 export const App: FC<{ name: string }> = ({ name }) => {
   const [] = useState(2);
   const tempVar = 5;
-  console.log(              "dsds");
-              
+  console.log("           dsds");
+       
 
 
 
@@ -17,7 +17,13 @@ export const App: FC<{ name: string }> = ({ name }) => {
 
 
 
-  
+
+
+
+
+
+
+
   return (
     <div>
       <h1>Hello {name}!</h1>

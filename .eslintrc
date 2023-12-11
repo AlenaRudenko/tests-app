@@ -10,14 +10,15 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:import/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/recommended",
     "react-app",
-    "prettier",
-    "prettier/@typescript-eslint"
+    "plugin:prettier/recommended"
   ],
-  "plugins": ["@typescript-eslint", "react", "react-hooks", "header", "import"],
+  "plugins": ["@typescript-eslint", "react", "react-hooks", "import"],
   "settings": {
     "react": {
       "version": "detect"
@@ -70,7 +71,7 @@
       }
     ],
     "no-case-declarations": "warn",
-    "no-console": "2",
+    "no-console": 2,
     "no-debugger": "warn",
     "no-else-return": "warn",
     "no-param-reassign": "warn",
@@ -78,54 +79,6 @@
     "no-unused-vars": "off",
     "no-var": "warn",
     "object-shorthand": "warn",
-    "padding-line-between-statements": [
-      "warn",
-      {
-        "blankLine": "always",
-        "prev": "*",
-        "next": "class"
-      },
-      {
-        "blankLine": "always",
-        "prev": "*",
-        "next": "for"
-      },
-      {
-        "blankLine": "always",
-        "prev": "*",
-        "next": "function"
-      },
-      {
-        "blankLine": "always",
-        "prev": "*",
-        "next": "if"
-      },
-      {
-        "blankLine": "always",
-        "prev": "*",
-        "next": "return"
-      },
-      {
-        "blankLine": "always",
-        "prev": "*",
-        "next": "switch"
-      },
-      {
-        "blankLine": "always",
-        "prev": "*",
-        "next": "try"
-      },
-      {
-        "blankLine": "always",
-        "prev": "*",
-        "next": "while"
-      },
-      {
-        "blankLine": "always",
-        "prev": "block-like",
-        "next": ["let", "const"]
-      }
-    ],
     "prefer-const": "warn",
     "react/jsx-boolean-value": "warn",
     "react/jsx-curly-brace-presence": "warn",
